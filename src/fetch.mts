@@ -224,5 +224,5 @@ export function toAssetUrl(s: FetchResult): string {
 }
 
 function sanitize(path: string): string {
-    return pathSanitizer(path) || '_';
+    return pathSanitizer.default(path) || '_';
 }
